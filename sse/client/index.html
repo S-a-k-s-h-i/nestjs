@@ -1,0 +1,8 @@
+<script type="text/javascript">
+    const eventSource = new EventSource('/sse');
+    eventSource.onmessage = ({ data }) => {
+    console.log('New message', JSON.parse(data));
+};
+
+</script>
+
