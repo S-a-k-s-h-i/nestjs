@@ -6,7 +6,7 @@ import { AppService } from './app.service';
 @Module({
   imports: [
     MulterModule.register({
-      dest: 'public/files',
+      dest: './files',
     })
   ],
   controllers: [AppController],
